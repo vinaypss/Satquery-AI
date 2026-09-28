@@ -1,0 +1,47 @@
+{
+  "verification_id": "satquery-segformer-b0-tesla-t4-real-sentinel2-1790216772",
+  "project": "SatQuery AI (SIH26167 | ISRO / Department of Space | Team IMPOSTERS)",
+  "task": "segmentation",
+  "specialist": "Remote Sensing Semantic Segmentation Specialist",
+  "environment": {
+    "gpu": "Tesla T4",
+    "cuda_available": true,
+    "cuda_version": "13.0",
+    "torch_version": "2.11.0+cu130",
+    "device": "cuda"
+  },
+  "model": {
+    "model_id": "nvidia/segformer-b0-finetuned-ade-512-512",
+    "checkpoint": "nvidia/segformer-b0-finetuned-ade-512-512",
+    "architecture": "SegFormer-B0",
+    "specialization_status": "General Semantic Segmentation Baseline (ADE20K 150 classes)",
+    "model_loaded": true
+  },
+  "input": {
+    "image_source": "2019-06-03-00_00_2019-06-03-23_59_Sentinel-2_L2A_Moisture_Stress.jpg",
+    "image_dimensions": {
+      "width": 696,
+      "height": 564
+    },
+    "modality": "OPTICAL",
+    "target": "building",
+    "source_type": "REAL_SENTINEL_2_IMAGE"
+  },
+  "execution": {
+    "forward_pass_completed": true,
+    "segmented_pixels_count": 5692,
+    "mask_dimensions": {
+      "width": 696,
+      "height": 564
+    },
+    "confidence": 0.2311,
+    "provenance": "MODEL_GENERATED",
+    "synthetic_fake_masks": false
+  },
+  "verification_summary": {
+    "real_inference_verified": true,
+    "verified_on_tesla_t4": true,
+    "real_satellite_image_test": true,
+    "accuracy_validated": false
+  }
+}

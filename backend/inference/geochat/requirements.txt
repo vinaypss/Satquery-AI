@@ -1,0 +1,18 @@
+# SatQuery AI - Phase 7 GeoChat-7B Worker Requirements
+# SIH26167 | ISRO Space Technology
+# Official GeoChat Repository: https://github.com/mbzuai-oryx/GeoChat
+# Target Environment: Google Colab / Linux with NVIDIA GPU (Tesla T4, >=15GB VRAM)
+
+torch==2.0.1
+torchvision==0.15.2
+transformers==4.31.0
+accelerate==0.21.0
+bitsandbytes==0.41.0
+peft==0.4.0
+sentencepiece==0.1.99
+tokenizers>=0.12.1
+einops==0.6.1
+timm==0.6.13
+pillow>=9.5.0
+scipy>=1.11.0
+requests>=2.31.0

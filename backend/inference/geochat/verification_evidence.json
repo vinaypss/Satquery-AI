@@ -1,0 +1,46 @@
+{
+  "verification_id": "satquery-geochat-7b-tesla-t4-real-sentinel2",
+  "project": "SatQuery AI (SIH26167 | ISRO / Department of Space | Team IMPOSTERS)",
+  "environment": {
+    "gpu": "Tesla T4",
+    "vram_gb": 14.56,
+    "cuda_available": true,
+    "device": "cuda"
+  },
+  "model": {
+    "model_id": "MBZUAI/geochat-7B",
+    "checkpoint_source": "/content/geochat-safetensors",
+    "architecture": "GeoChatLlamaForCausalLM",
+    "load_mode": "4bit",
+    "model_loaded": true
+  },
+  "input": {
+    "image_source": "2019-06-03-00_00_2019-06-03-23_59_Sentinel-2_L2A_Moisture_Stress.jpg",
+    "image_dimensions": {
+      "width": 696,
+      "height": 564
+    },
+    "source_type": "REAL_SENTINEL_2_IMAGE"
+  },
+  "vqa": {
+    "question": "What features are visible in this satellite scene?",
+    "answer": "In this satellite scene, there are two buildings, two roads, and two storage tanks visible. The buildings are located at the top right and bottom right of the image, while the roads are located at the top right and bottom left of the image. The storage tanks are located at the bottom right of the image.",
+    "duration_ms": 11738,
+    "provenance": "MODEL_GENERATED",
+    "validation_state": "validated"
+  },
+  "caption": {
+    "prompt": "Describe this satellite scene in detail.",
+    "caption": "In the satellite image, there are some buildings located close to each other at the right side of the scene.",
+    "raw_caption": "In the satellite image, there are <p>some buildings</p> {<88><30><96><38>|<90>}<delim>{<79><38><87><46>|<90>} located close to each other at the right side of the scene.",
+    "duration_ms": 7594,
+    "provenance": "MODEL_GENERATED",
+    "validation_state": "validated"
+  },
+  "verification_summary": {
+    "real_inference_verified": true,
+    "verified_on_tesla_t4": true,
+    "real_satellite_image_test": true,
+    "synthetic_output": false
+  }
+}

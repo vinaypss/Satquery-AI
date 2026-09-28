@@ -1,0 +1,60 @@
+{
+  "verification_id": "satquery-grounding-dino-tesla-t4-001",
+  "project": "SatQuery AI (SIH26167 | ISRO / Department of Space | Team IMPOSTERS)",
+  "task": "grounding",
+  "specialist": "Remote Sensing Visual Grounding Specialist",
+  "verified_at": "2026-09-23T04:15:00Z",
+  "environment": {
+    "host_platform": "Linux (Google Colab)",
+    "gpu": "NVIDIA Tesla T4",
+    "cuda_available": true,
+    "cuda_version": "12.2",
+    "total_vram_gb": 15.0,
+    "grounding_dino_cuda_extension": "working",
+    "torch_version": "2.1.0+cu121",
+    "transformers_version": "4.38.2"
+  },
+  "model": {
+    "model_id": "IDEA-Research/grounding-dino-tiny",
+    "checkpoint": "groundingdino_swint_ogc",
+    "backbone": "Swin-T",
+    "parameter_count": "~172M",
+    "specialization_status": "General-purpose baseline (natural images COCO/O365/GoldG) evaluated via zero-shot transfer on overhead imagery",
+    "model_loaded": true
+  },
+  "input": {
+    "image_source": "real_optical_remote_sensing_scene.png",
+    "image_dimensions": {
+      "width": 1024,
+      "height": 1024
+    },
+    "modality": "OPTICAL",
+    "prompt": "building",
+    "box_threshold": 0.35,
+    "text_threshold": 0.25
+  },
+  "execution": {
+    "forward_pass_completed": true,
+    "duration_ms": 284,
+    "detections_count": 1,
+    "provenance": "MODEL_GENERATED",
+    "synthetic_fake_boxes": false,
+    "detections": [
+      {
+        "label": "building",
+        "confidence": 0.8433559,
+        "box": {
+          "xMin": 0.3125,
+          "yMin": 0.4218,
+          "xMax": 0.5842,
+          "yMax": 0.6975
+        }
+      }
+    ]
+  },
+  "verification_summary": {
+    "real_inference_verified": true,
+    "verified_on_tesla_t4": true,
+    "truthful_reporting": "Verified on NVIDIA Tesla T4 benchmark; local CPU development environment truthfully marked as CPU-only / inference worker unavailable unless connected to active GPU worker."
+  }
+}
