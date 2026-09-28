@@ -1,0 +1,6 @@
+{
+  "name": "SatQuery AI",
+  "description": "Interactive vision-language assistant for multimodal remote-sensing image analysis through text queries (SIH26167 - ISRO)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

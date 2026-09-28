@@ -1,0 +1,41 @@
+MIT License
+
+Copyright (c) 2026 Team IMPOSTERS — SatQuery AI (SIH26167)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+NOTICE — Scope of this license
+
+This MIT license applies to the original source code authored by Team IMPOSTERS
+in this repository ("SatQuery AI"). It does NOT cover:
+
+- Third-party dependencies, which remain under their own licenses
+  (React: MIT; Express: MIT; Vite: MIT; tsx: MIT; @google/genai: Apache-2.0;
+  lucide-react: ISC; motion: MIT; Tailwind CSS: MIT; TypeScript: Apache-2.0;
+  esbuild: MIT; dotenv: BSD-2-Clause).
+- Pre-trained model checkpoints referenced by the project (e.g. GeoChat-7B,
+  Grounding DINO Tiny, SegFormer-B0, TinyCD, and any Optical-SAR research
+  artifacts). Those models retain their own terms (Llama 2 Community License
+  / Vicuna terms, Apache-2.0, NVIDIA license, MIT, academic research terms).
+- Datasets (e.g. Copernicus Sentinel-1/Sentinel-2 data accessed via the
+  Copernicus Data Space Ecosystem STAC API), which are subject to the
+  Copernicus data and open-access licensing terms.
+- Model weights/checkpoints are not distributed with this repository.
